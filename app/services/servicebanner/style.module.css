@@ -1,0 +1,46 @@
+.img_container {
+  padding-top: 10%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.mask {
+  /* visibility: hidden; */
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.flow {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.mask img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.intro_header{
+  position: absolute;
+  top: 20%;
+  color: #fff;
+}
+
+.intro_header h2{
+  font-size: 100px;
+}
+
+.intro_header h1{
+  font-size: 130px;
+  text-decoration: underline;
+}
