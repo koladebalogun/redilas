@@ -176,3 +176,22 @@
     width: 50vw;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .site-header-title h1{
+    font-size: 25px;
+  }
+  
+  .site-header-title h3{
+    font-size: 20px;
+  }
+  
+  .site-header-content {
+  width: 100%;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px;
+}
+}
+
