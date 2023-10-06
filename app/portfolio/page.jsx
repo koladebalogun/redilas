@@ -1,5 +1,6 @@
 import { createClient } from "contentful";
 import PortfolioCard from "./portfolio-card/PortfolioCard";
+import styles from './style.module.css'
 
 async function getPortfolios() {
   const client = createClient({
@@ -15,17 +16,18 @@ async function getPortfolios() {
 export default async function page() {
   const portfolios = await getPortfolios();
 
-  console.log(portfolios);
-
   return (
-    <div>
-      <h1>Portfolios</h1>
-      <p>
+    <div className={styles.container}>
+      <h1>Our Portfolio</h1>
+      {/* <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, esse.
-      </p>
+      </p> */}
+      <div className={styles.portfolio_list}>
+        
       {portfolios.map((portfolio) => (
         <PortfolioCard key={portfolio.sys.id} data={portfolio} />
       ))}
+      </div>
     </div>
   );
 }

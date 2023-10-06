@@ -95,7 +95,7 @@
   transform-origin: center center;
 }
 
-.arrow_icon img{
+.arrow_icon img {
   width: 30px;
 }
 
@@ -127,4 +127,29 @@
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero_images {
+    width: 100%;
+    height: 30vh;
+    padding: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 70px 20px;
+  }
+
+  .hero_inner {
+    display: block;
+    margin: 0;
+  }
+
+  .hero_images {
+    width: 100%;
+    height: 30vh;
+    padding: none;
+  }
 }

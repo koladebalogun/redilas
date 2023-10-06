@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 // styles
 import styles from "./style.module.css";
 
-export default async function AboutList({ data }) {
+export default function AboutList({ data }) {
   useEffect(() => {
     AOS.init();
   }, []);
