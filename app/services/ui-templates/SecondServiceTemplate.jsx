@@ -16,10 +16,10 @@ export default function SecondServiceTemplate({ data }) {
   return (
     <div>
       <div className={styles.content_inner2}>
-        <div data-aos="fade-down-left">
+        <div data-aos="fade-up">
           <img src={data.src} alt="" />
         </div>
-        <div data-aos="fade-down-right">
+        <div data-aos="fade-up">
           <h4>{data.title}</h4>
           <ul>
             <li>{data.items[0]}</li>

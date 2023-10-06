@@ -2,8 +2,8 @@
   height: 100vh;
   background-color: black;
   position: fixed;
-  right: -65px;
-  top: -64px;
+  right: 0;
+  top: 0;
   color:#fff;
   z-index: 3;
 }
@@ -11,7 +11,7 @@
 .body {
   box-sizing: border-box;
   height: 100%;
-  padding: 100px;
+  padding: 80px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -2,6 +2,7 @@
 import React, { useLayoutEffect } from "react";
 import Link from "next/link";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function SideNavBar() {
   const tl = gsap.timeline();
@@ -33,8 +34,10 @@ export default function SideNavBar() {
   return (
     <>
       <div className="sidebar-nav">
-        <div className="logo">
-          <Link href="#">PrimeCare</Link>
+        <div className="site-logo">
+          <Link href="/">
+            <Image src="/logo.jpg" width={120} height={40} />
+          </Link>
         </div>
       </div>
       <div className="clipper-left">

@@ -1,17 +1,20 @@
 import Link from 'next/link';
 import React from 'react'
 import Navigation from './NavigationMenu'
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
     <nav>
-      <div className="site-nav">
-        <div className="site-logo">
-          <Link href="#">Logo</Link>
-        </div>
+      <div>
+        {/* <div className="site-logo">
+          <Link href="/">
+            <Image src='/logo.jpg' width={120} height={40} />
+          </Link>
+        </div> */}
 
         <div className="menu-toggle">
-            <h2>Menu</h2>
+            <Navigation />
         </div>
       </div>
     </nav>

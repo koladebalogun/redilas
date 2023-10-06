@@ -10,7 +10,6 @@
 .container {
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .sidebar-nav > *,
@@ -27,7 +26,7 @@
   position: absolute;
   width: 10.5vw;
   height: 100%;
-  padding: 4em 0;
+  /* padding: 4em 0; */
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -71,7 +70,7 @@
 
 .site-content {
   position: relative;
-  left: 10vw;
+  left: 12vw;
   width: 90vw;
   height: 100vh;
   z-index: -2;
@@ -90,10 +89,16 @@
 .site-nav {
   position: absolute;
   background: transparent;
-  padding: 4em;
+  padding: 15px 20px;
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.site-logo img {
+  width: 150px;
+  height: 130px;
+  /* z-index: 10; */
 }
 
 .site-content a,
@@ -161,7 +166,7 @@
   background: #000085;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .sidebar-nav {
     display: none;
   }
@@ -175,23 +180,56 @@
     left: 0;
     width: 50vw;
   }
+  
+   .site-header-title h1{
+    position: absolute;
+    top: -370px;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .site-header-content {
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: -290px;
+    color: #000;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .site-header-title h1{
+  .site-header-title h1 {
     font-size: 25px;
   }
-  
-  .site-header-title h3{
+
+  .site-header-title h3 {
     font-size: 20px;
   }
-  
-  .site-header-content {
-  width: 100%;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 10px;
-}
-}
 
+  .site-logo img {
+    width: 100px;
+    height: 70px;
+    /* z-index: 10; */
+  }
+  
+  .site-header-title h1{
+    position: absolute;
+    top: -200px;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .site-header-content {
+    width: 100%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    bottom: -190px;
+    color: #000;
+  }
+}
