@@ -5,11 +5,26 @@
 .list_intro h3 {
   font-size: 38px;
   color: rgb(115, 115, 115);
-  /* color: #000; */
   text-decoration: underline;
   text-decoration-color: #000085;
 }
 
 .content {
   padding-top: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 80px 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 80px 20px;
+  }
+  
+  .list_intro h3 {
+    font-size: 25px;
+  }
 }

@@ -18,14 +18,9 @@
 .content_inner2 h4 {
   font-size: 30px;
   color: rgb(115, 115, 115);
-  /* color: #000; */
   text-decoration: underline;
   text-decoration-color: #000085;
 }
-
-/* .content_inner_text ul{
-    width: 90%;
-} */
 
 .content_inner ul,
 .content_inner2 ul {
@@ -43,4 +38,30 @@
 .content_inner2 img {
   width: 400px;
   height: 400px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content_inner img,
+  .content_inner2 img {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content_inner,
+  .content_inner2 {
+    display: block;
+    gap: 0;
+  }
+
+  .content_inner h4,
+  .content_inner2 h4 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .content_inner img,
+  .content_inner2 img {
+    margin-top: 20px;
+  }
 }
