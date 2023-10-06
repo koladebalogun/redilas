@@ -2,24 +2,15 @@ import React from "react";
 import AboutBanner from "./aboutbanner/AboutBanner";
 import AboutList from "./aboutlist/AboutList";
 import AboutTestimonial from "./about-testimonial/AboutTestimonial";
-
-async function getAbout() {
-  const res = await fetch("http://localhost:5000/about_us", {
-    next: {
-      revalidate: 0,
-    },
-  });
-
-  return res.json();
-}
+import data from '../../data/about.json'
 
 
 export default async function page() {
-  const data = await getAbout();
+  const about = data.about_us
   return (
     <div>
       <AboutBanner />
-      <AboutList data={data} />
+      <AboutList data={about} />
       <AboutTestimonial />
     </div>
   );
