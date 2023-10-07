@@ -10,27 +10,27 @@ export default function ContactForm() {
   const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
-      e.preventDefault();
-      
-      console.log('sent')
+    e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-    //     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-    //     form.current,
-    //     process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       console.log("message sent");
-    //       setMessageSent(true);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    console.log("sent");
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          setMessageSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   if (messageSent) {
