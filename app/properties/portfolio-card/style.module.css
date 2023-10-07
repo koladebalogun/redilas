@@ -1,10 +1,13 @@
 .card_container {
   margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card_inner {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 
@@ -39,8 +42,8 @@
 
 @media only screen and (max-width: 500px) {
   .card_inner {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     position: relative;
   }
 }

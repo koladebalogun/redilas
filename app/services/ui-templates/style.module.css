@@ -29,7 +29,7 @@
 
 .content_inner li,
 .content_inner2 li {
-  padding: 15px;
+  padding: 15px 0;
   font-size: 20px;
   list-style: none;
 }

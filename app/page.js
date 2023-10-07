@@ -10,10 +10,10 @@ export default function Home() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      tl.from(".site-header > *", 2, {
-        opacity: 0,
+      tl.to(".site-header", 2, {
+        opacity: 1,
         delay: 5.5,
-        y: 40,
+        y: -40,
         ease: "power4.inOut",
         stagger: {
           amount: 0.5,
@@ -46,6 +46,10 @@ export default function Home() {
               Discover PrimeCare Properties, your gateway to effortless and
               profitable property investments through our innovative solutions.
             </p>
+
+            <Link href="#">
+              <button>Book a Property</button>
+            </Link>
           </div>
         </div>
       </div>

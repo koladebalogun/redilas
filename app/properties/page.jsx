@@ -18,7 +18,7 @@ export default async function page() {
 
   return (
     <div className={styles.container}>
-      <h1>Our Portfolio</h1>
+      <h1>Our Properties</h1>
       {/* <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, esse.
       </p> */}

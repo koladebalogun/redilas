@@ -26,7 +26,7 @@
   position: absolute;
   width: 10.5vw;
   height: 100%;
-  /* padding: 4em 0; */
+  padding: 4em 0;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -70,10 +70,9 @@
 
 .site-content {
   position: relative;
-  left: 12vw;
+  left: 10vw;
   width: 90vw;
   height: 100vh;
-  z-index: -2;
   overflow: hidden;
 }
 
@@ -99,8 +98,9 @@
   width: 90px;
   height: 40px;
   display: none;
-  /* z-index: 10; */
 }
+
+
 
 .site-content a,
 .menu-toggle {
@@ -117,6 +117,7 @@
   color: #fff;
   width: 100%;
   text-align: center;
+  opacity: 0;
 }
 
 .site-header-title h1 {
@@ -139,6 +140,15 @@
   margin: 0 auto;
   margin-top: 20px;
   text-transform: uppercase;
+}
+
+.site-header-content button{
+  margin-top: 40px;
+  border: 1px solid #000085;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  background: #000085;
 }
 
 .pre-loader {
@@ -185,7 +195,7 @@
    .site-header-title h1{
     position: absolute;
     top: -370px;
-    color: #000;
+  color: rgb(115, 115, 115);
     font-weight: 400;
   }
 
@@ -196,8 +206,9 @@
     font-size: 18px;
     padding: 10px;
     position: absolute;
-    bottom: -290px;
-    color: #000;
+    bottom: -400px;
+      color: rgb(115, 115, 115);
+
   }
 }
 
@@ -219,7 +230,8 @@
   .site-header-title h1{
     position: absolute;
     top: -200px;
-    color: #000;
+      color: rgb(115, 115, 115);
+
     font-weight: 400;
   }
 
@@ -230,7 +242,8 @@
     font-size: 12px;
     padding: 10px;
     position: absolute;
-    bottom: -190px;
-    color: #000;
+    bottom: -280px;
+      color: rgb(115, 115, 115);
+
   }
 }

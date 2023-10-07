@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react'
-import Navigation from './NavigationMenu'
-import Image from 'next/image';
+import Link from "next/link";
+import React from "react";
+import Navigation from "./NavigationMenu";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -14,7 +14,7 @@ export default function Navbar() {
         </div> */}
 
         <div className="menu-toggle">
-            <Navigation />
+          <Navigation />
         </div>
       </div>
     </nav>

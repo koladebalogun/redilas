@@ -35,9 +35,9 @@ export default function SideNavBar() {
     <>
       <div className="sidebar-nav">
         <div className="site-logo">
-          <Link href="/">
+          {/* <Link href="/">
             <Image src="/logo.jpg" width={100} height={40} />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="clipper-left">

@@ -88,9 +88,9 @@ export default function AboutBanner() {
                 the full potential of every property we handle.
               </p>
               <div className={styles.btn_row}>
-                <Link href="/portfolio">
+                <Link href="/properties">
                   <button className={styles.explore_button}>
-                    Explore our portfolio
+                    Explore our properties
                     <div className={styles.arrow_icon}>
                       <img src="/arrow.svg" alt="row" />
                     </div>

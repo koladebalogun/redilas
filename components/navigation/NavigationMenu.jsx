@@ -22,7 +22,7 @@ export default function NavigationMenu() {
     let ctx = gsap.context(() => {
       tl.to(navRef.current, 1, {
         opacity: 1,
-        delay:4,
+        delay: 3,
         ease: "power4.inOut",
         // stagger: {
         //   amount: 0.5,
@@ -38,7 +38,7 @@ export default function NavigationMenu() {
       <div className={styles.main}>
         <div className={styles.header} ref={navRef}>
           <Link href="/">
-            <Image src="/logo.jpg" width={90} height={40} />
+            <Image src="/logo.jpg" width={110} height={40} />
           </Link>
           <div
             onClick={() => {
