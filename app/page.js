@@ -30,7 +30,7 @@ export default function Home() {
       <SideNavBar />
       <div className="site-content">
         <div className="video-container" id="video-container">
-          <video autoPlay loop muted className="video">
+          <video autoPlay loop muted playsInline className="video">
             <source src="/intro.mp4" />
           </video>
         </div>
