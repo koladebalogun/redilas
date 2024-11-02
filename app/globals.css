@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'font';
+  src: url('../public/fonts/Blanquotey.ttf') ;
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+
 }
+
 
 .container {
   width: 100%;
@@ -19,7 +28,7 @@
 
 .sidebar-nav a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .sidebar-nav {
@@ -32,6 +41,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .clipper-left {
@@ -53,6 +63,7 @@
   padding: 4em;
   display: flex;
   align-items: center;
+  color: #000;
 }
 
 .clipper-right {
@@ -118,13 +129,14 @@
   width: 100%;
   text-align: center;
   opacity: 0;
+
 }
 
 .site-header-title h1 {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: #000085;
+  font-size: 70px;
   letter-spacing: 3px;
+  font-family: font;
+  text-transform: uppercase;
 }
 
 .site-header-title h3 {

@@ -37,8 +37,8 @@ export default function NavigationMenu() {
     <>
       <div className={styles.main}>
         <div className={styles.header} ref={navRef}>
-          <Link href="/">
-            <Image src="/logo.jpg" width={110} height={40} />
+          <Link href="/" className={styles.logoTxt}>
+            <h3>REDILAS</h3>
           </Link>
           <div
             onClick={() => {

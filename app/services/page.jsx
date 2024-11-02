@@ -1,22 +1,24 @@
-import Services from "./servicebanner/ServiceBanner";
-import ServiceList from "./servicelist/ServiceList";
-import data from "../../data/services.json"
+"use client";
+import { useEffect } from "react";
+import Intro from "../../components/Servicecomponents/Intro";
+import Services from "../../components/Servicecomponents/Services";
 
-export default async function page() {
-  const services = data.services
-  const firstService = services[0];
-  const secondService = services[1];
-  const thirdService = services[2];
-  const fourthService = services[3];
+const Service = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   return (
-    <div>
-      <Services />
-      <ServiceList
-        firstService={firstService}
-        secondService={secondService}
-        thirdService={thirdService}
-        fourthService={fourthService}
-      />
-    </div>
+    <>
+      <main>
+        <Intro />
+        <Services />
+      </main>
+    </>
   );
-}
+};
+
+export default Service;

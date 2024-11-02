@@ -11,6 +11,11 @@
   width: 100%;
   opacity: 0;
 }
+.logoTxt{
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .button {
   width: 60px;

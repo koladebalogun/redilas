@@ -31,24 +31,20 @@ export default function Home() {
       <div className="site-content">
         <div className="video-container" id="video-container">
           <video autoPlay loop muted playsInline className="video">
-            <source src="/intro.mp4" />
+            <source src="/video.mp4" />
           </video>
         </div>
 
         <div className="site-header">
           <div className="site-header-title">
-            <h1>Welcome to PrimeCare Properties</h1>
-            <h3>Your Prime Property Partner</h3>
+            <h1>Welcome to Redilas</h1>
           </div>
 
           <div className="site-header-content">
-            <p>
-              Discover PrimeCare Properties, your gateway to effortless and
-              profitable property investments through our innovative solutions.
-            </p>
+            <p>Where challenges are translated into seamless solutions</p>
 
-            <Link href="#">
-              <button>Book a Property</button>
+            <Link href="/services">
+              <button>Check our services</button>
             </Link>
           </div>
         </div>
