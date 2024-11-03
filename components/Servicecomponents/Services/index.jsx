@@ -30,7 +30,7 @@ const List = [
     ],
   },
   {
-    title: "Network Solutions &amp; Infrastructure",
+    title: "Network Solutions & Infrastructure",
     content: [
       "Design and deployment of reliable, secure networks to support organizational needs.",
       "Regular network monitoring, troubleshooting, and maintenance.",
@@ -38,7 +38,7 @@ const List = [
     ],
   },
   {
-    title: " Software Development &amp; Custom Solutions",
+    title: " Software Development & Custom Solutions",
     content: [
       "Full-cycle software development from planning to deployment and maintenance.",
       "Custom solutions (web, mobile, or desktop applications) based on client requirements.",
@@ -46,7 +46,7 @@ const List = [
     ],
   },
   {
-    title: "IT Consulting &amp; Strategy",
+    title: "IT Consulting & Strategy",
     content: [
       "Advisory services to help businesses align IT strategies with organizational goals.",
       "Risk assessment and budgeting to maximize IT investment ROI.",
@@ -54,7 +54,7 @@ const List = [
     ],
   },
   {
-    title: "Disaster Recovery &amp; Backup Solutions",
+    title: "Disaster Recovery & Backup Solutions",
     content: [
       "Development and testing of disaster recovery plans.",
       "Implementation of backup solutions to ensure business continuity.",
@@ -62,7 +62,7 @@ const List = [
     ],
   },
   {
-    title: "IoT &amp; Edge Computing Solutions",
+    title: "IoT & Edge Computing Solutions",
     content: [
       "IoT integration for industries like manufacturing, healthcare, and retail.",
       "Edge computing for real-time data processing closer to the data source.",

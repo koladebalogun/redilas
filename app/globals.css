@@ -1,261 +1,102 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: "dream";
+  src: url("../public/fonts/RintBasic-Regular.ttf");
+  font-weight: 400; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
 
 @font-face {
-  font-family: 'font';
-  src: url('../public/fonts/Blanquotey.ttf') ;
-  font-weight: normal;
-  font-style: normal;
+  font-family: "roboto";
+  src: url("../public/fonts/Roboto-Regular.ttf");
+  font-weight: 400; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
 }
 
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
+  font-family: roboto;
 }
 
+html,
+body {
+  /* width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #a0a0a0; */
+}
+
+.wrapper {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
 
 .container {
-  width: 100%;
-  height: 100vh;
-}
-
-.sidebar-nav > *,
-.site-nav {
-  position: relative;
-}
-
-.sidebar-nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.sidebar-nav {
-  position: absolute;
-  width: 10.5vw;
-  height: 100%;
-  padding: 4em 0;
-  background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  
-}
-
-.clipper-left {
-  position: absolute;
-  top: 0;
-  left: 10vw;
-  height: 100vh;
-  width: 40vw;
-  background: #fff;
-  overflow: clip;
-  clip-path: inset(0 0 0 0);
-  display: flex;
-  justify-content: flex-end;
-}
-
-.loader-text {
-  width: max-content;
-  height: 100%;
-  padding: 4em;
-  display: flex;
-  align-items: center;
-  color: #000;
-}
-
-.clipper-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 50vw;
-  background: #fff;
-  overflow: clip;
-  clip-path: inset(0 0 0 0);
-  display: flex;
-  justify-content: flex-start;
-}
-
-.site-content {
-  position: relative;
-  left: 10vw;
-  width: 90vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  z-index: -1;
-  filter: brightness(35%);
-}
-
-.site-nav {
-  position: absolute;
-  background: transparent;
-  padding: 15px 20px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.site-logo img {
-  width: 90px;
-  height: 40px;
-  display: none;
-}
-
-
-
-.site-content a,
-.menu-toggle {
-  text-decoration: none;
-  color: #fff;
-}
-
-.site-header {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-
-}
-
-.site-header-title h1 {
-  font-size: 70px;
-  letter-spacing: 3px;
-  font-family: font;
-  text-transform: uppercase;
-}
-
-.site-header-title h3 {
-  font-size: 25px;
-  margin-top: 15px;
-  text-decoration: underline;
-  text-decoration-color: #000085;
-  letter-spacing: 3px;
-}
-
-.site-header-content {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-transform: uppercase;
-}
-
-.site-header-content button{
-  margin-top: 40px;
-  border: 1px solid #000085;
-  cursor: pointer;
-  padding: 10px;
-  color: #fff;
-  background: #000085;
-}
-
-.pre-loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100000;
-  background: #fff;
-}
-
-.loader-wrapper {
-  position: relative;
-  width: 2px;
-  height: 140px;
-  background: rgb(240, 240, 240);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.loader {
-  position: absolute;
-  top: 0;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background: #000085;
+  margin-top: 80px;
 }
 
-@media (max-width: 1000px) {
-  .sidebar-nav {
-    display: none;
-  }
-
-  .site-content {
-    width: 100vw;
-    left: 0;
-  }
-
-  .clipper-left {
-    left: 0;
-    width: 50vw;
-  }
-  
-   .site-header-title h1{
-    position: absolute;
-    top: -370px;
-  color: rgb(115, 115, 115);
-    font-weight: 400;
-  }
-
-  .site-header-content {
-    width: 100%;
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 10px;
-    position: absolute;
-    bottom: -400px;
-      color: rgb(115, 115, 115);
-
-  }
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
 }
 
-@media only screen and (max-width: 500px) {
-  .site-header-title h1 {
-    font-size: 25px;
+.header .h1 {
+  font-size: 180px;
+  color: #1a1a1a;
+  line-height: 1.125;
+  font-family: dream;
+}
+
+.hero {
+  width: 95vw;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #1a1a1a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width: 450px) {
+  .container {
+    margin-top: 50px;
   }
 
-  .site-header-title h3 {
-    font-size: 20px;
+  .header .h1 {
+    font-size: 50px;
   }
 
-  .site-logo img {
-    width: 100px;
-    height: 70px;
-    /* z-index: 10; */
+  .hero {
+    width: 94vw;
+    height: 70vh;
+    border-radius: 10px;
+    border: 4px solid #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .site-header-title h1{
-    position: absolute;
-    top: -200px;
-      color: rgb(115, 115, 115);
-
-    font-weight: 400;
-  }
-
-  .site-header-content {
-    width: 100%;
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 10px;
-    position: absolute;
-    bottom: -280px;
-      color: rgb(115, 115, 115);
-
-  }
 }

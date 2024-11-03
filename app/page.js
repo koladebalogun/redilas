@@ -10,10 +10,19 @@ export default function Home() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      tl.to(".site-header", 2, {
-        opacity: 1,
-        delay: 5.5,
-        y: -40,
+      tl.from(".h1", 1, {
+        opacity: 0,
+        // delay: 4,
+        y: 700,
+        ease: "power4.inOut",
+        stagger: {
+          amount: 0.5,
+        },
+      });
+      tl.from(".hero", 1, {
+        opacity: 0,
+        // delay: 0.2,
+        y: 400,
         ease: "power4.inOut",
         stagger: {
           amount: 0.5,
@@ -25,28 +34,36 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="container">
-      <Preloader />
-      <SideNavBar />
-      <div className="site-content">
-        <div className="video-container" id="video-container">
-          <video autoPlay loop muted playsInline className="video">
-            <source src="/video.mp4" />
-          </video>
+    <main className="wrapper">
+
+      <div className="overlay">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      <div className="container">
+        <nav></nav>
+
+        <div className="header">
+          <div className="h1">R</div>
+          <div className="h1">E</div>
+          <div className="h1">D</div>
+          <div className="h1">I</div>
+          <div className="h1">L</div>
+          <div className="h1">A</div>
+          <div className="h1">S</div>
         </div>
 
-        <div className="site-header">
-          <div className="site-header-title">
-            <h1>Welcome to Redilas</h1>
-          </div>
-
-          <div className="site-header-content">
-            <p>Where challenges are translated into seamless solutions</p>
-
-            <Link href="/services">
-              <button>Check our services</button>
-            </Link>
-          </div>
+        <div className="hero">
+          <img src="/ab1.jpg" />
         </div>
       </div>
     </main>

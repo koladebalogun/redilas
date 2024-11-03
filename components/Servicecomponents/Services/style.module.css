@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "dream";
+  src: url("../../../public/fonts/RintBasic-Regular.ttf");
+  font-weight: 400; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+
 .wrapper {
   margin-top: 250px;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10vw;
   position: relative;
-  top: 380px;
+  top: 450px;
 }
 
 .line {
@@ -13,11 +20,15 @@
 }
 
 .description p:nth-child(1) {
+  margin: 20px 0px;
   display: flex;
   width: 100%;
   gap: 30px;
-  font-size: 50px;
-  color: #cb9b51;
+  font-size: 35px;
+  color: #310164;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #fbb03b;
 }
 
 .description p:nth-child(2) {
@@ -25,20 +36,24 @@
 }
 
 .subtext {
-  color: #cb9b51;
+  color: #310164;
   text-align: center;
   margin: 50px 0;
+  
 }
 
 .list{
   color: #000;
   padding: 10px;
-  list-style: circle;
+  list-style:disc;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 @media only screen and (max-width: 450px) {
   .wrapper {
     margin-top: 20px;
+    top: 300px;
   }
 
   .description p:nth-child(1) {
